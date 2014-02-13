@@ -30,7 +30,7 @@
              sprintf(filename, "file_%04d.txt", i);
              FILE *fp = fopen(filename, "wt");
              for (double x = 0.0 ; x <= 10 ; x += 0.1) {
-                 fprintf(fp, "%.2lelf %le\n", x, sin(x));
+                 fprintf(fp, "%.2le %le\n", x, sin(x));
              }
              fclose(fp);
          }
